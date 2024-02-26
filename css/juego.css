@@ -1,87 +1,92 @@
-#ahorcado{
-	display: block;
-	margin: 20px auto;
-	width: 600px;
-	height: 300px;	
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
 }
 
-.tableroletras{
-	display: block;
-	width: 600px;
-	height: 200px;	
-	margin: 20px auto;
+#ahorcado {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.palabra{
+.tableroletras {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.palabra {
+    display: flex;
     justify-content: center;
-	margin: 20px auto;
-	padding: 5px;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
 }
 
-.palabras{
-	text-align: center;
-	font-size: 3em;
-	font-weight: bold;
-	padding: 0 5px;
-	border: none;
-	background: transparent;
-	outline: none;
+.palabras {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 10px;
+    border: none;
+    background: transparent;
+    outline: none;
 }
 
-.letrasusadas{
-	align-content: center;
+.letrasusadas, .letra {
+    display: flex;
     justify-content: center;
-	font-size: 1.5em;
-	margin: 10px auto;
-	width: 300px;
-	font-weight: bold;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 10px auto;
+    width: auto;
+    font-weight: bold;
 }
 
-.letra{
-	text-align: center;
-	font-size: 1.5em;
-	width: 300px;
-	font-weight: bold;
-	border: 0;
-	background: none;
-	outline: none;
+.letra {
+    font-size: 1.5em;
+    width: 100%;
 }
 
 .mensaje {
-	display: block;
-	position: absolute;
-    float: right;
-	left:  50%;
-	top: 150px;
-	margin: 20px auto;	
-	text-align: center;
-	font-size: 2em;
-	width: 400px;
-	font-weight: bold;
-	color: red;
-	border: 0;
-	background: none;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 80%;
+    font-weight: bold;
+    color: red;
 }
-.botones_juego{
+
+.botones_juego {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px auto;
 }
 
-.nvojuego{
-	width: 250px;
-	height: 90px;
+.nvojuego, .desistir {
+    width: 80%;
+    max-width: 250px;
+    height: 60px;
+    margin: 10px;
+    font-size: 1em; /* Reducido el tamaño de fuente */
+    font-weight: bold;
+}
+
+.nvojuego {
     background: #0A3871;
-	font-size: 18px;
-	color: #FFFFFF;
-    
+    color: #FFFFFF;
 }
 
-.desistir{
-	width: 250px;
-	height: 90px;
+.desistir {
     background: #ffffff;
-    font-size: 18px;
-	color: #0A3871;
+    color: #0A3871;
 }

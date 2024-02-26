@@ -1,36 +1,52 @@
-main{
+main {
     display: flex;
-	justify-content: space-around;
-    height: 1024px;
+    justify-content: space-around;
+    min-height: 100vh; /* Use min-height instead of height for full viewport height */
 }
-.botones{
+
+.botones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.btnIniJuego{
-	width: 320px;
-	height: 110px;
+.btnIniJuego, .btnAgrePal {
+    width: 320px;
+    height: 110px;
+    font-size: 18px;
+}
+
+.btnIniJuego {
     background: #0A3871;
-	font-size: 18px;
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.btnAgrePal{
-	width: 320px;
-	height: 110px;
+.btnAgrePal {
     background: #ffffff;
-	color: #0A3871;
+    color: #0A3871;
 }
 
-footer{
+footer {
     background: #0A3871;
     text-align: center;
     font-weight: bold;
     color: #FFFFFF;
     padding: 20px;
     font-size: 13px;
-	margin: 40px 0
+    margin: 40px 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .btnIniJuego, .btnAgrePal {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Add some margin between buttons */
+    }
 }
