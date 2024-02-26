@@ -1,42 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 900px;
+    min-height: 100vh; /* Ajuste para ocupar al menos el 100% del alto de la ventana */
+    padding: 20px;
+    box-sizing: border-box;
 }
-.nueva-palabra{
-    margin-top: 200px;
-    font-size: 20px;
+
+.nueva-palabra {
+    margin-top: 20px; /* Reducido el espacio superior */
+    font-size: 18px; /* Ajuste del tamaño de fuente */
     border: none;
     background: transparent;
+    text-align: center; /* Centrado del texto */
 }
 
-._8letras{
-    font-size: 12px;
-    vertical-align: bottom;
-    margin-bottom: 20px;
+._8letras {
+    font-size: 14px; /* Ajuste del tamaño de fuente */
+    margin-bottom: 10px; /* Reducido el espacio inferior */
+    text-align: center; /* Centrado del texto */
 }
 
-.botonera{
-    vertical-align: bottom;
+.botonera {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambiado a columna para dispositivos más pequeños */
     justify-content: center;
     align-items: center;
 }
 
-.btnAgregar{
-    width: 250px;
-	height: 90px;
-    background: #0A3871;
-	font-size: 18px;
-	color: #FFFFFF;
+.btnAgregar,
+.btnCancelar {
+    width: 80%;
+    max-width: 250px;
+    height: 60px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
 }
 
-.btnCancelar{
-    width: 250px;
-	height: 90px;
+.btnAgregar {
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.btnCancelar {
     background: #ffffff;
-    font-size: 18px;
-	color: #0A3871;
+    color: #0A3871;
 }
